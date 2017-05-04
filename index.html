@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&amp;Neucha" rel="stylesheet"> 
+  <title>HTML5 APIs: Assignment 2</title>
+  </head>
+  <body>
+    <h3>Table Inputs</h3>
+
+<table>
+  <tr>
+      <th>Control Type</th>
+      <th>Control</th>
+      <th>Value Entered</th>
+  </tr>
+  <tr>
+      <td>checkbox</td>
+      <td>
+        <form>  
+          <input type="checkbox" name="Yes" value="Yes" id = "chkYes">Yes<br>
+          <input type="checkbox" name="No" value="No" id="chkNo">No 
+        </form> 
+      </td>
+      <td><div id="checkboxVal"></div></td>
+  </tr>
+    <tr>
+      <td>color</td>
+      <td>
+        <form>
+          <input type="color" name="favcolor" id=favcolor>
+        </form>
+      </td>
+      <td><div id="colorVal"></div></td>
+  </tr>
+    <tr>
+      <td>date</td>
+      <td>
+        <form>
+          <input type="date" name="randomDate" id=randomDate>
+        </form>
+      </td>
+      <td><div id="dateVal"></div></td>
+  </tr>
+    <tr>
+      <td>datetime-local</td>
+      <td>
+        <form>
+          <input type="datetime-local" name="dateTime" id=dateTime>
+        </form>
+      </td>
+      <td><div id="dateTimeVal"></div></td>
+  </tr>
+    <tr>
+      <td>email</td>
+      <td>
+        <form>
+          <input type="email" name="email" id=email>
+        </form>
+      </td>
+      <td><div id="emailVal"></div></td>
+  </tr>
+    <tr>
+      <td>month</td>
+      <td>
+        <form>
+          <input type="month" name="monthYear" id=monthYear>
+        </form>
+      </td>
+      <td><div id="monthVal"></div></td>
+  </tr>
+    <tr>
+      <td>number</td>
+      <td>
+      <form>
+        <input type="number" name="quantity" id=quantity>
+      </form>
+      </td>
+      <td><div id="numberVal"></div></td>
+  </tr>
+    <tr>
+      <td>password</td>
+      <td>
+        <form>
+        <input type="password" name="psw" id="psw">
+        </form>
+      </td>
+      <td><div id="passwordVal"></div></td>
+  </tr>
+    <tr>
+      <td>radio</td>
+      <td>
+        <form>
+          <input type="radio" name="pet" id="pet1" value="dog" checked> Dog<br>
+          <input type="radio" name="pet" id="pet" value="cat"> Cat<br>
+          <input type="radio" name="pet" id="pet2" value="other"> Other
+        </form>
+      </td>
+      <td><div id=radioVal></div></td>
+  </tr>
+    <tr>
+      <td>range</td>
+      <td>
+        <form>
+         <input type="range" name="points" id="pointrange" min="0" max="10">
+        </form>
+      </td>
+      <td><div id=rangeVal></div></td>
+  </tr>
+    <tr>
+      <td>search</td>
+      <td>
+        <form>
+        Search page:
+          <input type="search" name="pageSearch" id=pagesearch>
+</form>
+      </td>
+      <td><div id=searchVal></div></td>
+  </tr>
+    <tr>
+      <td>tel</td>
+      <td>
+      <form>
+        <input type="tel" name="usrtel" id=usertel>
+      </form>
+      </td>
+      <td><div id=telVal></div></td>
+  </tr>
+    <tr>
+      <td>text</td>
+      <td>
+        <form>
+          Full Name:<br>
+          <input type="text" name="fullname" id="fullname">
+        </form> 
+      </td>
+      <td><div id=textVal></div></td>
+  </tr>
+    <tr>
+      <td>textarea</td>
+      <td>
+        <form>
+          <textarea name="comments" id=comments></textarea>
+        </form>
+      </td>
+      <td><div id=textareaVal></div></td>
+  </tr>
+    <tr>
+      <td>time</td>
+      <td>
+        <form>
+          <input type="time" name="usr_time" id=usr_time>
+        </form>
+      </td>
+      <td><div id=timeVal></div></td>
+  </tr>
+    <tr>
+      <td>url</td>
+      <td>
+        <form>
+          <input type="url" name="homepage" id="homepage">
+        </form>
+      </td>
+      <td><div id=urlVal></div></td>
+  </tr>
+    <tr>
+      <td>week</td>
+      <td>
+        <form>
+            <input type="week" name="week_year" id=weekyear>
+        </form>
+      </td>
+      <td><div id=weekVal></div></td>
+  </tr>
+    <tr>
+      <td>select</td>
+      <td>
+        <select id="icecream">
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="strawberry">Strawberry</option>
+        </select>
+      </td>
+      <td><div id=selectVal></div></td>
+  </tr>
+  
+  
+</table>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/inputTable.js">
+    </script>
+  </body>
+</html>
